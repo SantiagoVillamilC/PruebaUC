@@ -1,0 +1,867 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+  background-color: black;
+}
+
+.grid-container > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: #85aedd;
+  background-image: url(https://www.xtrafondos.com/wallpapers/ciudad-colores-neon-7834.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #afd6af;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #fdcfcf;
+}
+
+.main {
+  grid-area: main;
+  /*background-color: #f5f5f5;*/
+  background-color: black;
+  color: white;
+  font-family: 'Courier Prime', monospace;
+}
+
+.footer {
+  grid-area: footer;
+  /*background-color: #8c96a0;*/
+  /*background-color: #4E5357;*/
+  background-color: black;
+  font-family: 'Courier Prime', monospace;
+}
+
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header"  550px
+    "main"    auto
+    "footer"  200px;
+  }
+
+  .cabecera{
+    color: white;
+    height: 55px;
+    margin-top: 15px;
+  }
+  .menuCabecera{
+    display: flex;
+    justify-content:flex-end;
+    height: 35px;
+  }
+  .botonesMenuCabecera{
+    padding-top: 5px;
+    width: 22%;
+    margin-left: 5%;
+    height: auto;
+    border-radius: 35px;
+    font-family: 'Courier Prime', monospace;
+  }
+  .botonesMenuCabecera a{
+    font-size: 10px;
+    color: white;
+    text-decoration:none;
+  }
+  #nombreCabecera{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    margin-left: 10;
+    width: 18%;
+    margin-top: -5px;
+    border-color: black;
+    padding-top: 5px;
+    float: left;
+    margin-left: 2%;
+  }
+  .botonesMenuCabecera:hover{
+    color: black;
+    background-color: white;
+    transition: 1s;
+  }
+  .botonesMenuCabecera:hover a{
+    color: black;
+    transition: 1s;
+  }
+
+
+  .articuloSobreMi{
+    width: 100%;
+    color: white;
+    height: 600px;
+  }
+  .articuloSobreMi h2{
+    margin-top: 45px;
+    font-size: 35px;
+    margin-bottom: 45px;
+  }
+  .textoSobreMi{
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+  }
+  .textoSobreMi a{
+    color: #FF6600;
+  }
+  #imagenDerechaSobreMi{
+    width: 100%;
+  }
+
+
+
+
+  .articuloConocimiento{
+    background-color: #151515;
+    margin-top: 10%;
+    background-image: url(https://i.pinimg.com/originals/a3/8d/a1/a38da1aa519fb44e8b38d92e8fdd77c0.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: auto;
+    padding-top: 65px;
+  }
+  .articuloConocimiento h2{
+    font-size: 35px;
+    margin-bottom: 45px;
+  }
+  .articuloConocimiento p{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 15px;
+  }
+  .textoPrincipalConocimientos{
+    height: 200px;
+  }
+
+  .tarjetas{
+    width: 100%;
+    justify-content: center;
+    padding-left: 3%;
+    height: 1900px;
+    justify-content: center;
+  }
+  .conocimientoC, .conocimientoHTML, .conocimientoJava, .conocimientoPython, .conocimientoSQL, .conocimientoJavaScript {
+    background-color: #151515;
+    width: 85%;
+    height: 300px;
+    margin-left: 5%;
+    margin-top: 3%;
+    border-style: ridge;
+    border-color: white;
+    padding-top: 2%;
+    border-radius: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .conocimientoC:hover, .conocimientoHTML:hover, .conocimientoJava:hover, .conocimientoPython:hover, .conocimientoSQL:hover, .conocimientoJavaScript:hover {
+    background-color: #56585D;
+    border-style: dashed;
+    border-color: white;
+    padding-top: 2%;
+    transition: 0.5s;
+  }
+  .conocimientoC p, .conocimientoHTML p, .conocimientoJava p, .conocimientoPython p, .conocimientoSQL p, .conocimientoJavaScript p{
+    font-size: 16px;
+  }
+  .conocimientoC img, .conocimientoHTML img, .conocimientoJava img, .conocimientoPython img, .conocimientoSQL img, .conocimientoJavaScript img{
+    height: auto;
+    width: 15%;
+    margin-bottom: 25px;
+  }
+  .tablaSecundariaConocimientos{
+    width: 100%;
+    height: 450px;
+    margin-top: 2%;
+    background-color: #151515;
+    padding-top: 2%;
+  }
+  .imagenSecundariaConocimientos{
+    width: 80%;
+    height: 200px;
+    margin-left: 13%;
+    margin-bottom: 45px;
+  }
+  .imagenSecundariaConocimientos img{
+    width: 100%;
+  }
+  .textoSecundarioConocimientos{
+    padding-top: 5%;
+    width: 100%;
+    height: 200px;
+    float: left;
+  }
+
+
+
+
+
+
+  .articuloContacto{
+    width: 100%;
+    height: auto;
+    padding-top: 65px;
+  }
+  .articuloContacto h2{
+    font-size: 35px;
+    margin-bottom: 45px;
+  }
+  .articuloContacto p{
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+  #imagenCorreo{
+    width: 55%;
+    margin-bottom: 35px;
+  }
+  .redesContacto{
+    width: 100%;
+    height: 100px;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+  }
+  .redesContacto a{
+    margin-left: 2%;
+  }
+  .linkedin{
+    width: 150px;
+    height: 70px;
+    float: left;
+    background-color: #56585D;
+    padding-top: 18px;
+    border-radius: 15px;
+    display:flex;
+    justify-content:center;
+  }
+  .github{
+    margin-left: 2%;
+    width: 150px;
+    height: 70px;
+    float: left;
+    background-color: #56585D;
+    border-radius: 15px;
+    padding-top: 10px;
+    display:flex;
+    justify-content:center;
+  }
+  .linkedin img{
+    width: 120px;
+    height: 30px;
+  }
+  /*https://1000marcas.net/wp-content/uploads/2020/01/Logo-Linkedin.png*/
+  .github img{
+    width: 120px;
+    height: 50px;
+  }
+  .linkedin:hover, .github:hover{
+    background-color: white;
+    transition: 1s;
+  }
+
+
+
+
+  .piePagina{
+    /*background-color: #4E5357;*/
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    color: #4E5357;
+    font-size: 10px;
+    justify-content: center;
+    padding-top: 5%;
+    line-height: 20px;
+  }
+  .piePagina button{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    background-color: black;
+    height: 50px;
+    width: 45%;
+    margin-bottom: 2%;
+    border-radius: 45px;
+    color: gray;
+    cursor: pointer;
+    border-color: gray;
+    border-style: dotted;
+    margin-bottom: 25px;
+  }
+  .piePagina button:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+  }
+
+
+
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template:
+      "header  header" 550px
+      "main   main"   auto
+      "footer  footer" 100px /
+      auto    auto;
+  }
+
+
+
+  .cabecera{
+    color: white;
+    height: 55px;
+    margin-top: 15px;
+  }
+  .menuCabecera{
+    display: flex;
+    justify-content:flex-end;
+    height: 35px;
+  }
+  .botonesMenuCabecera{
+    padding-top: 5px;
+    width: 15%;
+    margin-left: 5%;
+    height: auto;
+    border-radius: 35px;
+    font-family: 'Courier Prime', monospace;
+  }
+  .botonesMenuCabecera a{
+    color: white;
+    text-decoration:none;
+    font-size: 15px;
+  }
+  #nombreCabecera{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    margin-left: 10;
+    width: 20%;
+    margin-top: -5px;
+    border-color: black;
+    padding-top: 5px;
+    float: left;
+    margin-left: 2%;
+  }
+  .botonesMenuCabecera:hover{
+    color: black;
+    background-color: white;
+    transition: 1s;
+  }
+  .botonesMenuCabecera:hover a{
+    color: black;
+    transition: 1s;
+  }
+
+
+  .articuloSobreMi{
+    width: 100%;
+    color: white;
+    height: 400px;
+  }
+  .articuloSobreMi h2{
+    margin-top: 45px;
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+  .textoSobreMi{
+    float: left;
+    width: 50%;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .textoSobreMi a{
+    color: #FF6600;
+  }
+  .imagenDerecha{
+    float: left;
+  }
+  #imagenDerechaSobreMi{
+    width: 100%;
+  }
+
+
+
+
+  .articuloConocimiento{
+    background-color: #151515;
+    margin-top: 10%;
+    background-image: url(https://i.pinimg.com/originals/a3/8d/a1/a38da1aa519fb44e8b38d92e8fdd77c0.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: auto;
+    padding-top: 65px;
+  }
+  .articuloConocimiento h2{
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+  .articuloConocimiento p{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .textoPrincipalConocimientos{
+    height: 200px;
+  }
+
+  .tarjetas{
+    width: 100%;
+    justify-content: center;
+    padding-left: 3%;
+    height: 700px;
+    font-size: 18px;
+  }
+  .conocimientoC, .conocimientoHTML, .conocimientoJava, .conocimientoPython, .conocimientoSQL, .conocimientoJavaScript {
+    background-color: #151515;
+    width: 27%;
+    height: 300px;
+    margin-left: 4%;
+    float: left;
+    margin-top: 2%;
+    border-style: ridge;
+    border-color: white;
+    padding-top: 2%;
+    border-radius: 5%;
+  }
+  .conocimientoC p, .conocimientoHTML p, .conocimientoJava p, .conocimientoPython p, .conocimientoSQL p, .conocimientoJavaScript p{
+    font-size: 15px;
+  }
+  .conocimientoC:hover, .conocimientoHTML:hover, .conocimientoJava:hover, .conocimientoPython:hover, .conocimientoSQL:hover, .conocimientoJavaScript:hover {
+    background-color: #56585D;
+    border-style: dashed;
+    border-color: white;
+    padding-top: 2%;
+    transition: 0.5s;
+    font-size: 14px;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .conocimientoC img, .conocimientoHTML img, .conocimientoJava img, .conocimientoPython img, .conocimientoSQL img, .conocimientoJavaScript img{
+    height: auto;
+    width: 15%;
+    margin-bottom: 25px;
+  }
+  .tablaSecundariaConocimientos{
+    width: 100%;
+    height: 400px;
+    margin-top: 2%;
+    background-color: #151515;
+    padding-top: 2%;
+  }
+  .imagenSecundariaConocimientos{
+    width: 40%;
+    height: 200px;
+    float: left;
+    margin-left: 10%;
+  }
+  .imagenSecundariaConocimientos img{
+    width: 100%;
+  }
+  .textoSecundarioConocimientos{
+    padding-top: 5%;
+    width: 40%;
+    height: 200px;
+    float: left;
+  }
+
+
+
+
+
+
+  .articuloContacto{
+    width: 100%;
+    height: auto;
+    padding-top: 45px;
+  }
+  .articuloContacto h2{
+    font-size: 40px;
+    margin-bottom: 35px;
+  }
+  .articuloContacto p{
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+  #imagenCorreo{
+    width: 15%;
+    margin-bottom: 35px;
+  }
+  .redesContacto{
+    width: 100%;
+    height: 100px;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+  }
+  .redesContacto a{
+    margin-left: 2%;
+  }
+  .linkedin{
+    width: 150px;
+    height: 70px;
+    float: left;
+    background-color: #56585D;
+    padding-top: 18px;
+    border-radius: 15px;
+    display:flex;
+    justify-content:center;
+  }
+  .github{
+    margin-left: 2%;
+    width: 150px;
+    height: 70px;
+    float: left;
+    background-color: #56585D;
+    border-radius: 15px;
+    padding-top: 10px;
+    display:flex;
+    justify-content:center;
+  }
+  .linkedin img{
+    width: 120px;
+    height: 30px;
+  }
+  /*https://1000marcas.net/wp-content/uploads/2020/01/Logo-Linkedin.png*/
+  .github img{
+    width: 120px;
+    height: 50px;
+  }
+  .linkedin:hover, .github:hover{
+    background-color: white;
+    transition: 1s;
+  }
+
+
+
+
+  .piePagina{
+    /*background-color: #4E5357;*/
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    color: #4E5357;
+    font-size: 11px;
+    justify-content: center;
+    padding-top: 5%;
+    line-height: 20px;
+  }
+  .piePagina button{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    background-color: black;
+    height: 50px;
+    width: 14%;
+    margin-bottom: 2%;
+    border-radius: 45px;
+    color: gray;
+    cursor: pointer;
+    border-color: gray;
+    border-style: dotted;
+  }
+  .piePagina button:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+  }
+}
+
+@media (min-width: 1290px) {
+  .grid-container {
+    grid-template:
+      "header  header header"  700px
+      "main    main   main" auto
+      "footer  footer footer"  auto /
+      200px    auto   200px;
+  }
+  .cabecera{
+    color: white;
+    height: 55px;
+    margin-top: 15px;
+  }
+  .menuCabecera{
+    display: flex;
+    justify-content:flex-end;
+    height: 35px;
+  }
+  .botonesMenuCabecera{
+    /*border-color: white;
+    border-width: 2px;
+    border-style: solid;
+
+    /*background-color: white;*/
+    padding-top: 5px;
+    width: 13%;
+    margin-left: 5%;
+    height: auto;
+    border-radius: 35px;
+    font-family: 'Courier Prime', monospace;
+  }
+  .botonesMenuCabecera a{
+    color: white;
+    text-decoration:none;
+    font-size: 18px;
+  }
+  #nombreCabecera{
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    margin-left: 10;
+    width: 18%;
+    margin-top: -5px;
+    border-color: black;
+    padding-top: 5px;
+    float: left;
+    margin-left: 2%;
+  }
+  .botonesMenuCabecera:hover{
+    color: black;
+    background-color: white;
+    transition: 1s;
+  }
+  .botonesMenuCabecera:hover a{
+    color: black;
+    transition: 1s;
+  }
+
+
+  .articuloSobreMi{
+    width: 100%;
+    color: white;
+    height: 300px;
+  }
+  .articuloSobreMi h2{
+    margin-top: 45px;
+    font-size: 45px;
+    margin-bottom: 45px;
+  }
+  .textoSobreMi{
+    float: left;
+    width: 60%;
+    font-size: 21px;
+  }
+  .textoSobreMi a{
+    color: #FF6600;
+  }
+  .imagenDerecha{
+    float: left;
+  }
+  #imagenDerechaSobreMi{
+    width: 72%;
+  }
+
+
+
+
+  .articuloConocimiento{
+    background-color: #151515;
+    margin-top: 10%;
+    background-image: url(https://i.pinimg.com/originals/a3/8d/a1/a38da1aa519fb44e8b38d92e8fdd77c0.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: auto;
+    padding-top: 65px;
+  }
+  .articuloConocimiento h2{
+    font-size: 45px;
+    margin-bottom: 45px;
+  }
+  .articuloConocimiento p{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 21px;
+  }
+  .textoPrincipalConocimientos{
+    height: 200px;
+  }
+
+  .tarjetas{
+    width: 100%;
+    justify-content: center;
+    padding-left: 3%;
+    height: 700px;
+  }
+  .conocimientoC, .conocimientoHTML, .conocimientoJava, .conocimientoPython, .conocimientoSQL, .conocimientoJavaScript {
+    background-color: #151515;
+    width: 25%;
+    height: 300px;
+    margin-left: 5%;
+    float: left;
+    margin-top: 2%;
+    border-style: ridge;
+    border-color: white;
+    padding-top: 2%;
+    border-radius: 5%;
+  }
+  .conocimientoC p, .conocimientoHTML p, .conocimientoJava p, .conocimientoPython p, .conocimientoSQL p, .conocimientoJavaScript p{
+    font-size: 17px;
+  }
+  .conocimientoC:hover, .conocimientoHTML:hover, .conocimientoJava:hover, .conocimientoPython:hover, .conocimientoSQL:hover, .conocimientoJavaScript:hover {
+    background-color: #56585D;
+    border-style: dashed;
+    border-color: white;
+    padding-top: 2%;
+    transition: 0.5s;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .conocimientoC img, .conocimientoHTML img, .conocimientoJava img, .conocimientoPython img, .conocimientoSQL img, .conocimientoJavaScript img{
+    height: auto;
+    width: 15%;
+    margin-bottom: 25px;
+  }
+  .tablaSecundariaConocimientos{
+    width: 100%;
+    height: 450px;
+    margin-top: 2%;
+    background-color: #151515;
+    padding-top: 2%;
+  }
+  .imagenSecundariaConocimientos{
+    width: 40%;
+    height: 200px;
+    float: left;
+    margin-left: 13%;
+  }
+  .imagenSecundariaConocimientos img{
+    width: 100%;
+  }
+  .textoSecundarioConocimientos{
+    padding-top: 5%;
+    width: 40%;
+    height: 200px;
+    float: left;
+  }
+
+
+
+
+
+
+  .articuloContacto{
+    width: 100%;
+    height: auto;
+    padding-top: 65px;
+  }
+  .articuloContacto h2{
+    font-size: 45px;
+    margin-bottom: 45px;
+  }
+  .articuloContacto p{
+    margin-bottom: 25px;
+    font-size: 21px;
+  }
+  #imagenCorreo{
+    width: 15%;
+    margin-bottom: 35px;
+  }
+  .redesContacto{
+    width: 100%;
+    height: 100px;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+  }
+  .redesContacto a{
+    margin-left: 2%;
+  }
+  .linkedin{
+    width: 150px;
+    height: 70px;
+    float: left;
+    background-color: #56585D;
+    padding-top: 18px;
+    border-radius: 15px;
+    display:flex;
+    justify-content:center;
+  }
+  .github{
+    margin-left: 2%;
+    width: 150px;
+    height: 70px;
+    float: left;
+    background-color: #56585D;
+    border-radius: 15px;
+    padding-top: 10px;
+    display:flex;
+    justify-content:center;
+  }
+  .linkedin img{
+    width: 120px;
+    height: 30px;
+  }
+  /*https://1000marcas.net/wp-content/uploads/2020/01/Logo-Linkedin.png*/
+  .github img{
+    width: 120px;
+    height: 50px;
+  }
+  .linkedin:hover, .github:hover{
+    background-color: white;
+    transition: 1s;
+  }
+
+
+
+
+  .piePagina{
+    /*background-color: #4E5357;*/
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    color: #4E5357;
+    font-size: 12px;
+    justify-content: center;
+    padding-top: 5%;
+    line-height: 20px;
+  }
+  .piePagina button{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    background-color: black;
+    height: 50px;
+    width: 14%;
+    margin-bottom: 2%;
+    border-radius: 45px;
+    color: gray;
+    cursor: pointer;
+    border-color: gray;
+    border-style: dotted;
+  }
+  .piePagina button:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+  }
+}
